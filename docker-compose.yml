@@ -1,0 +1,80 @@
+version: '3.1'
+
+services:
+  postgres-uwb:
+    image: postgres:latest
+    container_name: postgres-uwb-prod
+    environment:
+      POSTGRES_DB: UWB
+      POSTGRES_USER: uwb
+      POSTGRES_PASSWORD: uwb123
+    ports:
+      - "5432:5432"
+
+  postgres-uwb-notification:
+    image: postgres:latest
+    container_name: postgres-uwb-notification-prod
+    environment:
+      POSTGRES_DB: UWB-NOTIFICATION
+      POSTGRES_USER: uwb
+      POSTGRES_PASSWORD: uwb123
+    ports:
+      - "5433:5432"
+
+  zookeeper:
+    image: wurstmeister/zookeeper
+    ports:
+      - "2181:2181"
+
+  kafka:
+    image: wurstmeister/kafka
+    ports:
+      - "9092:9092"
+    environment:
+      KAFKA_ADVERTISED_LISTENERS: INSIDE://kafka:9092,OUTSIDE://localhost:9093
+      KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: INSIDE:PLAINTEXT,OUTSIDE:PLAINTEXT
+      KAFKA_LISTENERS: INSIDE://0.0.0.0:9092,OUTSIDE://0.0.0.0:9093
+      KAFKA_INTER_BROKER_LISTENER_NAME: INSIDE
+      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_AUTO_CREATE_TOPICS_ENABLE: 'false'
+
+  UWB_GATEWAY:
+    image: openjdk:17
+    container_name: uwb-gateway-prod
+    command: java -jar /app/UWB-GATEWAY.jar
+    volumes:
+      - ./UWB-GATEWAY.jar:/app/UWB-GATEWAY.jar
+    ports:
+      - "8080:8080"
+
+  UWB_SERVER:
+    image: openjdk:17
+    container_name: uwb-server-prod
+    command: java -jar /app/UWB-SERVER.jar
+    environment:
+      - ENV_FILE_PATH=/app
+    volumes:
+      - ./.env:/app/.env
+      - ./UWB-SERVER.jar:/app/UWB-SERVER.jar
+    depends_on:
+      - postgres-uwb
+
+  # UWB_NOTIFICATION_SERVER:
+  #   image: openjdk:17
+  #   container_name: uwb-notification-server-prod
+  #   command: java -jar /app/UWB-NOTIFICATION-SERVER.jar
+  #   environment:
+  #     - ENV_FILE_PATH=/app
+  #   volumes:
+  #     - ./.env:/app/.env
+  #     - ./UWB-NOTIFICATION-SERVER.jar:/app/UWB-NOTIFICATION-SERVER.jar
+  #   depends_on:
+  #     - postgres-uwb-notification
+
+  UWB_CLIENT_APP:
+    image: nginx:latest
+    container_name: uwb-client-app
+    ports:
+      - "4200:80"
+    volumes:
+      - ./uwb-client-app:/usr/share/nginx/html

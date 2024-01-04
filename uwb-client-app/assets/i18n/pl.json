@@ -1,0 +1,287 @@
+{
+  "global": {
+    "menu": {
+      "logout": "Wyloguj",
+      "profile": "Profil",
+      "changeStyle": "Zmień styl",
+      "pages": {
+        "users": "Użytkownicy",
+        "localizations": "Lokalizacje",
+        "localizationsArchive": "Archiwum lokalizacji",
+        "areaTypes": "Typy obszarów",
+        "areas": "Obszary",
+        "backgrounds": "Plany pomieszczeń",
+        "clients": "Jednostki organizacyjne",
+        "objects": "Tagi",
+        "anchors": "Kotwice",
+        "occurrence-map": "Mapa występowania",
+        "notifications": "Powiadomienia",
+        "notificationsConfig": "Konfiguracja powiadomień"
+      }
+    },
+    "table": {
+      "search": "Szukaj",
+      "noData": "Brak danych",
+      "filter": "Filtr"
+    },
+    "dialog": {
+      "addHeader": "Dodawanie elementu",
+      "editHeader": "Edytowanie elementu",
+      "calibrateHeader": "Kalibrowanie planu",
+      "deleteHeader": "Usuwanie elementu",
+      "deleteMessage": "Czy na pewno chcesz usunąć podany element?"
+    },
+    "toast": {
+      "header": {
+        "success": "Sukces",
+        "error": "Błąd",
+        "info": "Informacja",
+        "warning": "Ostrzeżenie"
+      }
+    },
+    "buttons": {
+      "add": "Dodaj",
+      "edit": "Edytuj",
+      "delete": "Usuń",
+      "cancel": "Anuluj",
+      "save": "Zapisz",
+      "close": "Zamknij",
+      "copy": "Kopiuj",
+      "draw": "Rysuj",
+      "stopDraw": "Nie rysuj",
+      "clear": "Wyczyść",
+      "login": "Zaloguj",
+      "addFile": "Dodaj plik",
+      "preview": "Podgląd",
+      "calibrate": "Kalibruj",
+      "mapSettings": "Ustawienia mapy",
+      "showAll": "Pokaż wszystko"
+    },
+    "formInvalid": {
+      "inputLengthInvalid": "Nazwa powinna mieć pomiędzy {{minLength}} - {{maxLength}} znaków !",
+      "passwordInvalid": "Hasło powinno zawierać małą literę, dużą literę, cyfrę, znak specjalny oraz długość conajmniej 8 znaków!",
+      "passwordConfirmInvalid": "Wartości hasła różnia się od siebie!"
+    }
+  },
+  "login": {
+    "loginError": "Nieprawidłowy email lub hasło!"
+  },
+  "profile": {
+    "menu": {
+      "profile": "Profil",
+      "password": "Hasło",
+      "settings": "Ustawienia"
+    },
+    "password": {
+      "oldPassword": "Stare hasło",
+      "password": "Nowe hasło",
+      "confirmPassword": "Potwierdź hasło"
+    },
+    "settings": {
+      "language": "Język aplikacji",
+      "theme": "Kolorystyka aplikacji"
+    },
+    "language": {
+      "pl": "Polski",
+      "en": "Angielski"
+    },
+    "theme": {
+      "light": "Jasna",
+      "dark": "Ciemna"
+    }
+  },
+  "user": {
+    "firstName": "Imie",
+    "lastName": "Nazwisko",
+    "email": "Email",
+    "dayOfBirth": "Data urodzenia",
+    "password": "Hasło",
+    "confirmPassword": "Potwierdź hasło",
+    "organizationUnit": "Jednostka organizacyjna",
+    "roles": "Role użytkownika",
+    "dialog": {
+      "addSuccess": "Dodano nowego użytkownika!",
+      "addError": "Dodanie nowego użytkownika nie powiodło się!",
+      "editSuccess": "Edytowano użytkownika!",
+      "editError": "Edycja użytkownika nie powiodło się!",
+      "deleteSuccess": "Usunięto użytkownika!",
+      "deleteError": "Usunięcie użytkownika nie powiodło się!"
+    }
+  },
+  "area": {
+    "name": "Nazwa obszaru",
+    "background": "Plan pomieszczenia",
+    "areaType": "Typ obszaru",
+    "color": "Kolor obszaru",
+    "areas": "Obszary",
+    "dialog": {
+      "addSuccess": "Dodano nowy obszar!",
+      "addError": "Dodanie nowego obszaru nie powiodło się!",
+      "editSuccess": "Edytowano obszar!",
+      "editError": "Edycja obszaru nie powiodło się!",
+      "deleteSuccess": "Usunięto obszar! ",
+      "deleteError": "Usunięcie obszaru nie powiodło się!"
+    }
+  },
+  "areaType": {
+    "name": "Nazwa typu",
+    "color": "Kolor typu",
+    "organizationUnit": "Jednostka organizacyjna",
+    "dialog": {
+      "header": "Podgląd planu",
+      "addSuccess": "Dodano nowy typ obszaru!",
+      "addError": "Dodanie nowego typu obszaru nie powiodło się!",
+      "editSuccess": "Edytowano typ obszaru!",
+      "editError": "Edycja typu obszaru nie powiodło się!",
+      "deleteSuccess": "Usunięto typ obszaru! ",
+      "deleteError": "Usunięcie typu obszaru nie powiodło się!"
+    }
+  },
+  "areaVertex": {
+    "lp": "Indeks wierzchołka",
+    "x": "X",
+    "y": "Y",
+    "area": "Obszar",
+    "dialog": {
+      "addSuccess": "Dodano nowe wierzchołki obszaru!",
+      "addError": "Dodanie nowych wierzchołków obszaru nie powiodło się!",
+      "editSuccess": "Edytowano wierzchołki obszaru!",
+      "editError": "Edycja wierzchołków obszaru nie powiodło się!",
+      "deleteMessage": "Czy na pewno chcesz usunąć wszystkie wierzchołki z danego obszaru?",
+      "deleteSuccess": "Usunięto wierzchołki obszaru! ",
+      "deleteError": "Usunięcie wierzchołków obszaru nie powiodło się!"
+    }
+  },
+  "background": {
+    "name": "Nazwa planu",
+    "scale": "Skala",
+    "image": "Plan pomieszczenia",
+    "organizationUnit": "Jednostka organizacyjna",
+    "realValue": "Rzeczywista wartość",
+    "dialog": {
+      "header": "Podgląd planu",
+      "addSuccess": "Dodano nowy plan pomieszczenia!",
+      "addError": "Dodanie nowego planu pomieszczenia nie powiodło się!",
+      "editSuccess": "Edytowano plan pomieszczenia!",
+      "editError": "Edycja planu pomieszczenia nie powiodło się!",
+      "editScaleSuccess": "Pomyślnie przeskalowano plan pomieszczenia!",
+      "editScaleError": "Skalowanie planu pomieszczeń nie powiodło się!",
+      "deleteSuccess": "Usunięto plan pomieszczenia! ",
+      "deleteError": "Usunięcie planu pomieszczenia nie powiodło się!"
+    }
+  },
+  "client": {
+    "name": "Nazwa jednostki organizacyjnej",
+    "clients": "Klienci",
+    "orgUnit": "Jednostka organizacyjna",
+    "parentOrganizationUnit": "Jednostka organizacyjna nadrzędna",
+    "orgUnits": "Jednostki organizacyjne",
+    "dialog": {
+      "addSuccess": "Dodano nową jednostkę organizacyjną!",
+      "addError": "Dodanie nowej jednostki organizacyjnej nie powiodło się!",
+      "editSuccess": "Edytowano jednostkę organizacyjną!",
+      "editError": "Edycja jednostki organizacyjnej nie powiodło się!",
+      "deleteSuccess": "Usunięto jednostkę organizayjną! ",
+      "deleteError": "Usunięcie jednostki organizacyjnej nie powiodło się!"
+    }
+  },
+  "object": {
+    "name": "Imie/Nazwa",
+    "secondName": "Nazwisko/Druga nazwa",
+    "hexTagId": "Identyfikator tagu",
+    "organizationUnit": "Jednostka organizacyjna",
+    "uwbObjectType": "Typ tagu",
+    "objects": "Tagi",
+    "uwbObjectTypes": "Typy tagów",
+    "icons": "Ikony",
+    "dialog": {
+      "addSuccess": "Dodano nowy tag!",
+      "addError": "Dodanie nowego tagu nie powiodło się!",
+      "idAlreadyExistsError": "Tag z podanym hex identyfikatorem już istnieje!",
+      "editSuccess": "Edytowano tag!",
+      "editError": "Edycja tagu nie powiodło się!",
+      "deleteSuccess": "Usunięto tag! ",
+      "deleteError": "Usunięcie tagu nie powiodło się!"
+    }
+  },
+  "objectType": {
+    "name": "Nazwa typu",
+    "organizationUnit": "Jednostka organizacyjna",
+    "icon": "Ikona",
+    "adminOnly": "Dla administratorów",
+    "dialog": {
+      "addSuccess": "Dodano nowy typ tagu!",
+      "addError": "Dodanie nowego typu tagu nie powiodło się!",
+      "editSuccess": "Edytowano typ tagu!",
+      "editError": "Edycja typu tagu nie powiodło się!",
+      "deleteSuccess": "Usunięto typ tagu! ",
+      "deleteError": "Usunięcie typu tagu nie powiodło się!"
+    }
+  },
+  "icon": {
+    "name": "Nazwa ikony",
+    "icon": "Ikona",
+    "dialog": {
+      "addSuccess": "Dodano nową ikonę tagu!",
+      "addError": "Dodanie nowej ikony tagu nie powiodło się!",
+      "editSuccess": "Edytowano ikonę tagu!",
+      "editError": "Edycja ikony tagu nie powiodło się!",
+      "deleteSuccess": "Usunięto ikonę tagu! ",
+      "deleteError": "Usunięcie ikony tagu nie powiodło się!"
+    }
+  },
+  "anchor": {
+    "anchors": "Kotwice",
+    "backgrounds":"Plany pomieszczeń",
+    "name": "Identyfikator",
+    "x": "X",
+    "y": "Y",
+    "z": "Z",
+    "dialog": {
+      "addSuccess": "Dodano nową kotwice!",
+      "addError": "Dodanie nowej kotwicy nie powiodło się!",
+      "idAlreadyExistsError": "Kotwica z podanym identyfikatorem już istnieje!",
+      "editSuccess": "Edytowano kotwice!",
+      "editError": "Edycja kotwicy nie powiodło się!",
+      "deleteSuccess": "Usunięto kotwice! ",
+      "deleteError": "Usunięcie kotwicy nie powiodło się!"
+    }
+  },
+  "localization": {
+    "backgrounds":"Plany pomieszczeń",
+    "objects": "Tagi",
+    "anchors": "Kotwice",
+    "areas": "Obszary",
+    "tag": {
+      "name": "Nazwa",
+      "x": "X",
+      "y": "Y",
+      "date": "Data"
+    },
+    "details": {
+      "mapOptions": "Opcje mapy",
+      "timeToChangePoint": "Czas zmiany punktów"
+    },
+    "overlay": {
+      "showAnchors": "Pokaż kotwice",
+      "showAreas": "Pokaż obszary"
+    }
+  },
+  "notification": {
+    "name": "Nazwa powiadomienia",
+    "title": "Tytuł powiadomienia",
+    "message": "Treść powiadomienia",
+    "date": "Data",
+    "objectName": "Nazwa obiektu",
+    "type": "Typ powiadomienia",
+    "areas": "Obszary",
+    "dialog": {
+      "addSuccess": "Dodano nową konfigurację powiadomienia!",
+      "addError": "Dodanie nowej konfiguracji powiadomienia nie powiodło się!",
+      "editSuccess": "Edytowano konfigurację powiadomienia!",
+      "editError": "Edycja konfiguracji powiadomienia nie powiodło się!",
+      "deleteSuccess": "Usunięto konfigurację powiadomienia! ",
+      "deleteError": "Usunięcie konfiguracji powiadomienia nie powiodło się!"
+    }
+  }
+}
